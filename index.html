@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class=" bg-gray-200">
+    <!--SIDEBAR-->
+    <div class="flex min-h-[100vh] flex-no-wrap">
+        <div class="w-64 bg-gray-800 hidden md:block">
+            <!---DASHBOARD TEXT WRAPPER--> 
+           <div  class="flex justify-center items-center h-20 bg-gray-900">
+            <h1 class="text-white text-2xl">Dashboard</h1>
+           </div>
+           <nav class="mt-10">
+              <a href="#"  class="flex mt-4    items-center  py-2 px-6 bg-gray-700 text-gray-100  hover:text-gray-400"> 
+                <span class="mx-3">
+                   Home
+                </span>
+             </a>
+             <a href="#"  class="flex  mt-4  items-center  py-2 px-6 hover:bg-gray-700 text-gray-100  hover:text-gray-400"> 
+                <span class="mx-3">
+                   Analytics
+                </span>
+             </a>
+
+             <a href="#"  class="flex  mt-4  items-center  py-2 px-6   hover:bg-gray-700 text-gray-100 hover:text-gray-400"> 
+                <span class="mx-3">
+                   Sales
+                </span>
+             </a>
+
+             <a href="#"  class="flex  mt-4  items-center  py-2 px-6   hover:bg-gray-700 text-gray-100  hover:text-gray-400"> 
+                <span class="mx-3">
+                   Messages
+                </span>
+             </a>
+           </nav>
+        </div>
+        <!--MAIN CONTENT-->
+   <div class=" flex flex-col w-full">
+<header class="flex  items-center bg-white px-4 h-16">
+    <button class="md:hidden  px -4 py-2 border  rounded-md text-gray-600  border-gray-300 ">
+        <?xml     version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+        <svg    class= "h-6  w-6 " width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z" fill="#000000"/>
+        </svg>
+    </button>
+
+
+  <div class="ml-auto flex items-center">
+    <button class="flex items-center px-6 py-2 border rounded-md">
+   <span> Sign out</span>
+    </button>
+  </div>
+</header>
+<!--content -->
+<main  class=" p-6 md:p-6">
+  <div class="flex   gap-5  flex-wrap"> 
+
+
+    <!--card1-->
+    <div class="bg-white p-4 md:p-6 rounded-lg shadow-lg min-w-[40%]  transition-shadow duration-900 hover:shadow-none">
+        <h3 class="text-xl font-semibold mb-4">Revenue</h3>
+        <p class="text-gray-400  text-4xl">$12000</p>
+    </div>
+    <div class="bg-white p-4 md:p-6 rounded-lg shadow-lg  min-w-[40%]  transition-shadow duration-900 hover:shadow-none">
+        <h3 class="text-xl font-semibold mb-4">Users</h3>
+        <p class="text-gray-400  text-4xl">5000</p>
+    </div>
+    <div class="bg-white p-4 md:p-6 rounded-lg shadow-lg  min-w-[40%]   transition-shadow duration-900 hover:shadow-none">
+        <h3 class="text-xl font-semibold mb-4">Sales</h3>
+        <p class="text-gray-400  text-4xl">2000</p>
+    </div>
+  </div>
+
+<div class="mt-8">
+    <div class="flex items-center justify-between">
+     <h2 class="xl font-semibold text-gray-600">  Recent activities</h2>
+     <button class="py-2 px-4 bg-blue-600  rounded-lg hover:bg-blue-700"> View All</button>
+    </div>
+</div>
+
+<div class="bg-white p-4  rounded-lg mt-4 overflow-auto">
+<table class="w-full">
+    <thead>
+    <tr class="text-left  border-b">
+        <th class="py-2">DATE </th>
+        <th  class="py-2">ACTIVITY </th>
+        <th  class="py-2">STATUS</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+    <td class="py-2">01/01/24 </td>
+    <td  class="py-2">Logged in</td>
+    <td class="py-2 text-green-500">Completed</td>
+    </tr>
+    <tr>
+        <td class="py-2">01/01/24 </td>
+        <td  class="py-2">Logged in</td>
+        <td class="py-2 text-green-500">Completed</td>
+        </tr>
+        <tr>
+            <td class="py-2">01/01/24 </td>
+            <td  class="py-2">Logged in</td>
+            <td class="py-2 text-yellow-500">Pending</td>
+            </tr>
+</tbody>
+</table>
+
+<div class=" bg-white p-4 and md:p-6 rounded-lg shadow-lg h-64 mt-8">
+
+<h3 class="text-xl font-semibold mb-4">Activity feed </h3>
+<div class="overflow-y-scroll h-[80%]">
+   <div class="flex items-center mb-4">
+    <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white">JD</div>
+    <div class="ml-4">
+        <p class="font-semibold">John Doe</p>
+        <p class="text-gray-600">Logged In</p>
+    </div>
+   
+  
+</div>
+<div class="flex items-center mb-4">
+    <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white">JD</div>
+    <div class="ml-4">
+        <p class="font-semibold">John Doe</p>
+        <p class="text-gray-600">Logged In</p>
+    </div>
+
+</div>
+
+<div class="flex items-center mb-4">
+    <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white">JD</div>
+    <div class="ml-4">
+        <p class="font-semibold">John Doe</p>
+        <p class="text-gray-600">Logged In</p>
+    </div>
+
+
+    
+        
+</div>
+
+<div class="flex items-center mb-4">
+    <div class="w-10 h-10 rounded-full bg-gray-600 flex items-center justify-center text-white">JD</div>
+    <div class="ml-4">
+        <p class="font-semibold">John Doe</p>
+        <p class="text-gray-600">Logged In</p>
+    </div>
+
+</div>
+<div class="flex items-center mb-4">
+    <div class="w-10 h-10 rounded-full bg-red-600 flex items-center justify-center text-white">JD</div>
+    <div class="ml-4">
+        <p class="font-semibold">John Doe</p>
+        <p class="text-gray-600">Logged In</p>
+    </div>
+
+</div>
+</div>
+
+</main>
+
+<footer class="bg-gray-700 text-white  text-center p-5 border-l"> 2024      &copy;  All rights reserved</footer>
+   </div>
+
+    </div>
+
+   
+</body>
+</html>
